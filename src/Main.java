@@ -12,13 +12,19 @@ public class Main {
         }
 
         System.out.println("Задача 2:");
-        int clientDeviceYear = 2015;
-        int clientOS1 = 1;
-        if (clientDeviceYear <= 2015 && clientOS1 ==0){
+        int clientDeviceYear = 2012;
+        int OS = 1;
+        if (clientDeviceYear <= 2015 && OS ==0){
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
+        } else if (clientDeviceYear <= 2015 && OS == 1) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        } else if (clientDeviceYear >= 2015 && OS ==0) {
+            System.out.println("Установите версию приложения для iOS по ссылке");
+        } else if (clientDeviceYear >= 2015 && OS ==1) {
+            System.out.println("Установите версию приложения для Android по ссылке");
         }
         else {
-            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+            System.out.println("Введены не коректные данные");
         }
 
         System.out.println("Задача 3:");
